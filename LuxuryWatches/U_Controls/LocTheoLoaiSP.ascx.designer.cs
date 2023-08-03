@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LuxuryWatches.PageUser
-    
-    
-    public partial class LoaiSP {
-        
+namespace LuxuryWatches.U_Controls
+{
+
+
+    public partial class LoaiSP
+    {
+
         /// <summary>
         /// Repeater1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace LuxuryWatches.PageUser
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater Repeater1;
-        
+
         /// <summary>
         /// ObjectDataSource1 control.
         /// </summary>

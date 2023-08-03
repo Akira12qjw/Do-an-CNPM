@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#"  AutoEventWireup ="true" CodeBehind="Site1.master.cs" Inherits="LuxuryWatches.Page_User.Site1" %>
+
+<%@ Register Src="~/PageUser/HeaderUser.ascx" TagPrefix="uc2" TagName="HeaderUser" %>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Luxury Shop chuyên bán các sản phẩm đồng hồ chính hãng</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="Styles_Content" runat="server"></asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+    
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <!--top-header-->
+	<div class="top-header">
+		<div class="container">
+			<div class="top-header-main top-header-left">
+                
+                <p class="col-md-6">
+                      <a href="/" style="color:#fff">Đăng Xuất&nbsp;</a>
+                  <!--  <a href="/dang-ky" style="color:#fff">&nbsp;Đăng Ký</a> -->
+
+                </p>
+				<div class="col-md-6 top-header-left">
+                    <div class="cart box_1">
+                        <a href="<%: GetRouteUrl("shoppinguser",null) %>">
+                            <div class="total">
+                                <span><%: Session["shoppinguser"] == null ? "0" : (Session["shoppinguser"] as List<LuxuryWatches.Data.CartItem>).Sum(m=>m.soLuong).ToString()  %></span>
+                            </div>
+                            <img src="/images/cart-1.png" alt="" />
+                        </a>
+                        <p><a href="<%: GetRouteUrl("shoppinguser",null) %>" class="simpleCart_empty">Giỏ Hàng</a></p>
+
+                        <div class="clearfix"></div>
+                    </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+        <!--top-header-->
+	<!--start-logo-->
+	<div class="logo">
+		<a href="../Userlg.aspx"><h1>Luxury Shop</h1></a>
+	</div>
+	<!--start-logo-->
+        <!--bottom-header-->
+        <uc2:HeaderUser runat="server" ID="HeaderUser" />
+        <!-- end bottom header -->
+
+        <!-- content -->
+      <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        <!-- end content -->
+	<!--information-starts-->
+	<div class="information">
+		<div class="container">
+			<div class="infor-top">
+				<div class="col-md-3 infor-left">
+					<h3>Mạng xã hội của cửa hàng</h3>
+					<ul>
+						<li><a href="#"><span class="fb"></span><h6>Facebook</h6></a></li>
+						<li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
+						<li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>Thông tin cần biết</h3>
+					<ul>
+						<li><a href="#"><p>Quy định giao hàng</p></a></li>
+						<li><a href="#"><p>Quy định thanh toán</p></a></li>
+						<li><a href="#"><p>Quy định đổi trả</p></a></li>
+						<li><a href="#"><p>Chính sách bảo hành</p></a></li>
+						<li><a href="#"><p>Điều kiện giao dịch</p></a></li>
+                        <li><a href="#"><p>Chính sách bảo mật</p></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>Hệ thống SHOWROOM</h3>
+					<ul>
+						<li><a href="#"><p><i class="glyphicon glyphicon-home"></i> 508 Nguyễn Trãi, Thanh Xuân, Hà Nội
+Điện thoại: 024.73.003.555</p></a></li>
+						<li><a href="#"><p><i class="glyphicon glyphicon-home"></i> 1022 CMT8, P5, Tân Bình, TP.Hồ Chí Minh
+Điện thoại: 028.3846.4694</p></a></li>
+					
+					</ul>
+				</div>
+				<div class="col-md-3 infor-left">
+					<h3>Thông tin cửa hàng</h3>
+					<h4>Cửa hàng Luxury Watches,
+						<span>25/2 KP5,</span>
+						đường Tô Ký, Quận 12, TPHCM.</h4>
+					<h5>+84 1636563921</h5>	
+					<p><a href="#">trinhgianhsoi@gmail.com</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--information-end-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-6 footer-left">
+						<p style="margin: 8px 0 0 0;font-size: 13px;color: #000;"><i class="glyphicon glyphicon-user"></i> Đang online: 5  <i class="glyphicon glyphicon-signal"></i> Tổng truy cập: 25360 lượt</p>			
+				</div>
+				<div class="col-md-6 footer-right">					
+					<p>© <%= DateTime.Now.Year %> Luxury Shop </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+           
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="/js/simpleCart.min.js"></script>
+     <link href="/css/memenu.css" rel="stylesheet" />
+    <script src="/js/memenu.js"></script>
+       <script>
+            $(document).ready(function () {
+                $(".memenu").memenu();
+            });
+    </script>	
+     <script src="/js/jquery.easydropdown.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <asp:ContentPlaceHolder ID="Scripts_Content" runat="server">
+
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -24,9 +24,9 @@
 				<div class="col-md-6 account-left">
 					<h3>Bạn đã có tài khoản</h3>
 					<div class="account-bottom" >
-                        <asp:TextBox TabIndex="3" ID="txtTaikhoan" ValidationGroup="loginForn" runat="server"></asp:TextBox>
+                        <input TabIndex="3" id="txtTaikhoan" ValidationGroup="loginForm" runat="server"/>
                         <br /><asp:RequiredFieldValidator ValidationGroup="loginForm" ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtTaikhoan" Display="Dynamic" ErrorMessage="Bạn chưa nhập tài khoản" ForeColor="Red">Bạn chưa nhập tài khoản</asp:RequiredFieldValidator>
-                        <asp:TextBox ID="txtMatkhau" TabIndex="4" TextMode="Password" ValidationGroup="loginForm" runat="server"></asp:TextBox>
+                        <input ID="txtMatkhau" TabIndex="4" type="password" ValidationGroup="loginForm" runat="server"/>
                         <br />
                         <asp:RequiredFieldValidator ValidationGroup="loginForm" ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtMatkhau" Display="Dynamic" ErrorMessage="Bạn chưa nhập Mật khẩu" ForeColor="Red">Bạn chưa nhập Mật khẩu</asp:RequiredFieldValidator>
                         <asp:Label ID="lblLoi" runat="server" ForeColor="Red"></asp:Label>

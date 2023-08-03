@@ -1,35 +1,33 @@
 ﻿* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    font-family:'poppins' ,sans-serif;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
-    section {
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url('../images/bgwatches.jpg');
-   
-    }
-  
-  
-    .box{
-        position: absolute;
-        margin-bottom: -1%;
-    
+}
+
+
+.box {
+    position: absolute;
+    margin-bottom: -1%;
 }
 
 .container {
     position: relative;
-    width: 680px;
+    width: 455px;
     min-height: 455px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 25px 45px rgba(0,0,0,0.1);
     background: rgba(0,0,0, .7);
-   
 }
 
 .form {
@@ -37,44 +35,41 @@
     /*width: 100px;*/
     height: 100px;
     padding: 40px;
-  
+   
 }
 
-    .form h2 {
-        position: relative;
+    .text{
+        
         color: white;
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 40px;
-        margin-left: 240px;
-    }
-   
+        margin: 16px 138px 16px 135px;
+    width: 200px;
+    height: 20px;
+}
+
 .style {
     width: 100%;
-    outlioutli
+   outline: none;
     }
-       
-       outline: none;
-       padding: 10px 15px;
-   }
 
-   .inputbox{
-       margin: 10px;
-      
-      
-   }
+.style {
+    width: 100%;
+    outline: none;
+    padding: 10px 15px;
+    height: 40px;
+}
 
-   #btnSignIn:hover{
-     cursor: pointer;
-     background: black;
-   }
+.inputbox {
+    margin: 10px;
+}
+.input-signin{
+    margin-top: 45px;
+}
 
-   .Btnsubmit {
+.Btnsubmit {
     display: flex;
     justify-content: center;
     margin-top: 35px;
-    }
+}
 
     .Btnsubmit input[type="submit"] {
         color: #FFF;
@@ -91,11 +86,17 @@
         background: #73B6E1;
         font-family: 'Lato-Regular';
     }
-  #btnSignIn:hover, 
+
     #btnRegister2:hover {
-        cursor: pointer;
-        background: black;
+       cursor: pointer;
+       background: black;
     }
- 
-
-
+   #btnSignIn{
+       margin-top: 60px;
+   }
+   #RequiredFieldValidator1, 
+   #RequiredFieldValidator2, 
+   #RequiredFieldValidator3, 
+   #RequiredFieldValidator4 {
+     font-size: 15px;
+   }

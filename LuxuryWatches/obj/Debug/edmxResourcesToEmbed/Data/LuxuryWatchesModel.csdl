@@ -314,6 +314,7 @@
     <Property Name="soDT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="matKhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="donHangs" Relationship="LuxuryWatchesModel.khachHangdonHang" FromRole="khachHang" ToRole="donHang" />
+    <Property Name="duocSD" Type="Boolean" Nullable="false" DefaultValue="True" />
   </EntityType>
   <Association Name="khachHangdonHang">
     <End Type="LuxuryWatchesModel.khachHang" Role="khachHang" Multiplicity="1" />

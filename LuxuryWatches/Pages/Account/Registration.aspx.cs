@@ -20,6 +20,8 @@ namespace LuxuryWatches.Pages.Account
 
         protected void btnDK_Click(object sender, EventArgs e)
         {
+           // khachHangBLL khBll = new khachHangBLL();
+           // khachHang kh = khBll.UserLogin(txtTaikhoan.Value, txtMatkhau.Value);
             if (Page.IsValid)
             {
                 khachHang dangkymoi = new khachHang()
@@ -28,17 +30,13 @@ namespace LuxuryWatches.Pages.Account
                     eMail = txtEmail.Value,
                     soDT = txtSDT.Value,
                     matKhau = txtMatkhau.Value,
-                    
-
-                };
-                
-                    LuxuryWatchesEntities db = new LuxuryWatchesEntities();
+            };
+                LuxuryWatchesEntities db = new LuxuryWatchesEntities();
                     db.khachHangs.Add(dangkymoi);
                     db.SaveChanges();
-                
-                // ClientScript.RegisterStartupScript(this.GetType(), "myalert", "<script>alert('Gửi thành công.');</script>", true);
-                 Response.Redirect("/");
-                //}
+                //Session["tkThanhVienUser"] = kh;
+                Response.Redirect("/Default.aspx");
+             
             }
 
         }

@@ -16,5 +16,6 @@ namespace LuxuryWatches.Data
         {
             return db.taiKhoans.FirstOrDefault(m => m.Quyen == "member" && m.tkThanhVien == tkThanhVien && m.matKhau == matkhau);
         }
+      
     }
 }

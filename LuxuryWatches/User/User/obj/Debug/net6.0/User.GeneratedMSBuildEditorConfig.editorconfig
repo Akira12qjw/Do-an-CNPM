@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = User
 build_property.RootNamespace = User
-build_property.ProjectDir = D:\WebDongHo-testw\LuxuryWatches\User\User\
+build_property.ProjectDir = D:\Download\WebDongHo-testw\LuxuryWatches\User\User\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\WebDongHo-testw\LuxuryWatches\User\User
+build_property.MSBuildProjectDirectory = D:\Download\WebDongHo-testw\LuxuryWatches\User\User
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/Error.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/Index.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/Privacy.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/_ViewImports.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/_ViewStart.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebDongHo-testw/LuxuryWatches/User/User/Pages/Shared/_Layout.cshtml]
+[D:/Download/WebDongHo-testw/LuxuryWatches/User/User/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yk241co3f1

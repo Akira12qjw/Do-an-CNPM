@@ -79,6 +79,7 @@
           <Property Name="eMail" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="soDT" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="matKhau" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="duocSD" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="loaiSP">
           <Key>
@@ -619,6 +620,7 @@
           <Property Name="soDT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="matKhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="donHangs" Relationship="LuxuryWatchesModel.khachHangdonHang" FromRole="khachHang" ToRole="donHang" />
+          <Property Name="duocSD" Type="Boolean" Nullable="false" DefaultValue="True" />
         </EntityType>
         <Association Name="khachHangdonHang">
           <End Type="LuxuryWatchesModel.khachHang" Role="khachHang" Multiplicity="1" />
@@ -782,6 +784,7 @@
           <EntitySetMapping Name="khachHangs">
             <EntityTypeMapping TypeName="LuxuryWatchesModel.khachHang">
               <MappingFragment StoreEntitySet="khachHang">
+                <ScalarProperty Name="duocSD" ColumnName="duocSD" />
                 <ScalarProperty Name="matKhau" ColumnName="matKhau" />
                 <ScalarProperty Name="soDT" ColumnName="soDT" />
                 <ScalarProperty Name="eMail" ColumnName="eMail" />

@@ -22,6 +22,8 @@ public partial class khachHang
     public khachHang()
     {
 
+        this.duocSD = true;
+
         this.donHangs = new HashSet<donHang>();
 
     }
@@ -34,6 +36,8 @@ public partial class khachHang
     public string soDT { get; set; }
 
     public string matKhau { get; set; }
+
+    public bool duocSD { get; set; }
 
 
 

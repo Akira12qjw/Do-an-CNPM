@@ -58,8 +58,9 @@
                             <li><span>Đơn giá</span></li>
                             <li><span>Thành tiền</span></li>
                             <li></li>
-                            <div class="clearfix"></div>
+                           
                         </ul>
+                             <div class="clearfix"></div>
                         <asp:Repeater ID="repeaterGioHang" runat="server" SelectMethod="GetShoppingCart" ItemType="LuxuryWatches.Data.CartItem">
                             <ItemTemplate>
                                 <ul class="cart-header">
@@ -92,9 +93,9 @@
                             <li></li>
                             <li></li>
                             <li></li>
-                            <div class="clearfix"></div>
+                            
                         </ul>
-
+                           <div class="clearfix"></div>
                     </div>
 
                 </div>

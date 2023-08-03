@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LuxuryWatches.Pages.Account {
-    
-    
-    public partial class Login {
-        
+namespace LuxuryWatches.Pages.Account
+{
+
+
+    public partial class Login
+    {
+
         /// <summary>
         /// txtTaikhoan control.
         /// </summary>
@@ -19,8 +21,8 @@ namespace LuxuryWatches.Pages.Account {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTaikhoan;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTaikhoan;
+
         /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace LuxuryWatches.Pages.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
+
         /// <summary>
         /// txtMatkhau control.
         /// </summary>
@@ -37,8 +39,8 @@ namespace LuxuryWatches.Pages.Account {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMatkhau;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtMatkhau;
+
         /// <summary>
         /// RequiredFieldValidator2 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace LuxuryWatches.Pages.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
+
         /// <summary>
         /// lblLoi control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace LuxuryWatches.Pages.Account {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLoi;
-        
+
         /// <summary>
         /// btnLogin2 control.
         /// </summary>

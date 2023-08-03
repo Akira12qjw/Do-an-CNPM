@@ -50,9 +50,19 @@
 		<div class="container">
 			<div class="top-header-main top-header-left">
                 <p class="col-md-6">
-                    <a href="/dang-nhap" style="color:#fff">Đăng Nhập&nbsp;</a>
-                    <a href="/dang-ky" style="color:#fff">&nbsp;Đăng Ký</a>
+                    <!--<a href="/dang-nhap" style="color:#fff">Đăng Nhập&nbsp;</a> -->
+                    <a href="/sign-in" style="color:#fff">&nbsp;Đăng Xuất</a> 
+
                 </p>
+              <h5 style="color:#fff">
+                 <%: (Session["tkThanhVienUser"] as LuxuryWatches.Data.khachHang)?.tkThanhVien + " " %>
+                 <%: (Session["tkThanhVienMember"] as LuxuryWatches.Data.taiKhoan)?.tkThanhVien + " " %>
+
+                
+               </h5>
+
+
+
 				<div class="col-md-6 top-header-left">
                     <div class="cart box_1">
                         <a href="<%: GetRouteUrl("shoppingcart",null) %>">
@@ -123,7 +133,7 @@
 						<span>25/2 KP5,</span>
 						đường Tô Ký, Quận 12, TPHCM.</h4>
 					<h5>+84 1636563921</h5>	
-					<p><a href="#">lehoangthienvu@gmail.com</a></p>
+					<p><a href="#">trinhgianhsoi@gmail.com</a></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -138,7 +148,7 @@
 						<p style="margin: 8px 0 0 0;font-size: 13px;color: #000;"><i class="glyphicon glyphicon-user"></i> Đang online: 5  <i class="glyphicon glyphicon-signal"></i> Tổng truy cập: 25360 lượt</p>			
 				</div>
 				<div class="col-md-6 footer-right">					
-					<p>© <%= DateTime.Now.Year %> Luxury Shop. All Rights Reserved | Design by  <a href="#" target="_blank">Lê Hoàng Thiên Vũ</a> </p>
+					<p>© <%= DateTime.Now.Year %> Luxury Shop </p>
 				</div>
 				<div class="clearfix"></div>
 			</div>

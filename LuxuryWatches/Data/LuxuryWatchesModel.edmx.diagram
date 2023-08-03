@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c91d0cf70fdb4da197f188723d6ad299" Name="Diagram1" ZoomLevel="73">
+      <Diagram DiagramId="c91d0cf70fdb4da197f188723d6ad299" Name="Diagram1" ZoomLevel="97">
         <EntityTypeShape EntityType="LuxuryWatchesModel.hopThu" Width="1.5" PointX="5.25" PointY="12.625" />
         <EntityTypeShape EntityType="LuxuryWatchesModel.baiViet" Width="1.5" PointX="4.75" PointY="16.625" />
-        <EntityTypeShape EntityType="LuxuryWatchesModel.taiKhoan" Width="1.5" PointX="2.375" PointY="8.375" />
+        <EntityTypeShape EntityType="LuxuryWatchesModel.taiKhoan" Width="1.5" PointX="2.25" PointY="8.25" />
         <AssociationConnector Association="LuxuryWatchesModel.FK__baiViet__tkThanh__1BFD2C07" />
         <AssociationConnector Association="LuxuryWatchesModel.FK_hopThu_taiKhoan" />
         <EntityTypeShape EntityType="LuxuryWatchesModel.sanPham" Width="1.5" PointX="5.25" PointY="5.25" />
@@ -21,7 +21,7 @@
         <EntityTypeShape EntityType="LuxuryWatchesModel.chiTietDH" Width="1.5" PointX="9.625" PointY="7.5" />
         <AssociationConnector Association="LuxuryWatchesModel.FK__chiTietDH__maDH__3E52440B" />
         <AssociationConnector Association="LuxuryWatchesModel.FK__chiTietDH__maSP__3F466844" />
-        <EntityTypeShape EntityType="LuxuryWatchesModel.khachHang" Width="1.5" PointX="10.125" PointY="11.125" />
+        <EntityTypeShape EntityType="LuxuryWatchesModel.khachHang" Width="1.5" PointX="10.125" PointY="11.125" IsExpanded="true" />
         <AssociationConnector Association="LuxuryWatchesModel.khachHangdonHang" />
       </Diagram>
     </edmx:Diagrams>

@@ -145,6 +145,7 @@
     <EntitySetMapping Name="khachHangs">
       <EntityTypeMapping TypeName="LuxuryWatchesModel.khachHang">
         <MappingFragment StoreEntitySet="khachHang">
+          <ScalarProperty Name="duocSD" ColumnName="duocSD" />
           <ScalarProperty Name="matKhau" ColumnName="matKhau" />
           <ScalarProperty Name="soDT" ColumnName="soDT" />
           <ScalarProperty Name="eMail" ColumnName="eMail" />

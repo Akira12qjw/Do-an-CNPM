@@ -74,6 +74,7 @@
     <Property Name="eMail" Type="nvarchar" MaxLength="250" Nullable="false" />
     <Property Name="soDT" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="matKhau" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="duocSD" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="loaiSP">
     <Key>

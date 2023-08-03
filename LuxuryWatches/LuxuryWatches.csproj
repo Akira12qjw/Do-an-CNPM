@@ -778,6 +778,8 @@
     <Content Include="fonts\Lora-Regular.ttf" />
     <Content Include="fonts\Muli-Regular.ttf" />
     <Content Include="fonts\Philosopher-Regular.ttf" />
+    <Content Include="Pages\Account\SignIn.aspx" />
+    <Content Include="photos\user\user.jpg" />
     <EntityDeploy Include="Data\LuxuryWatchesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LuxuryWatchesModel.Designer.cs</LastGenOutput>
@@ -823,9 +825,7 @@
     <Content Include="Admin\Admin.Master" />
     <Content Include="images\bgwatches.jpg" />
     <Content Include="images\gioi-thieu-luxury.jpg" />
-    <Content Include="Pages\Account\Customer.aspx" />
     <Content Include="Pages\Account\Logoff.ashx" />
-    <Content Include="Page User\Site1.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\11.png" />
     <Content Include="images\abt-1.jpg" />
@@ -871,7 +871,6 @@
     <Content Include="js\simpleCart.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Logoff.aspx" />
-    <Content Include="Pages\Account\Login.aspx" />
     <Content Include="Pages\Account\Registration.aspx" />
     <Content Include="Pages\Blog\PostContent.aspx" />
     <Content Include="Pages\SanPham\ChiTiet.aspx" />
@@ -1385,27 +1384,6 @@
     <Compile Include="Logoff.aspx.designer.cs">
       <DependentUpon>Logoff.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page User\Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Page User\Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Account\Customer.aspx.cs">
-      <DependentUpon>Customer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Account\Customer.aspx.designer.cs">
-      <DependentUpon>Customer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Account\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Account\Logoff.ashx.cs">
       <DependentUpon>Logoff.ashx</DependentUpon>
     </Compile>
@@ -1415,6 +1393,13 @@
     </Compile>
     <Compile Include="Pages\Account\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Blog\PostContent.aspx.cs">
       <DependentUpon>PostContent.aspx</DependentUpon>

@@ -1135,7 +1135,7 @@ img {
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
-  height: auto;
+  height: 28px;
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -5105,6 +5105,7 @@ a.thumbnail.active {
 }
 .media-object {
   display: block;
+    width: 39px;
 }
 .media-right,
 .media > .pull-right {
