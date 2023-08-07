@@ -32,8 +32,8 @@
                                   </li>
                                   <li class="nav-divider"></li>
                                   <li class="">
-                                        <a href="/" target="_blank">
-                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Về trang chủ</span>
+                                        <a href="/sign-in" target="_blank">
+                                          <i class="fa fa-envelope"></i><span class="link-title">&nbsp;Về trang đăng nhập</span>
                                         </a>
                                   </li>
                                 </ul>

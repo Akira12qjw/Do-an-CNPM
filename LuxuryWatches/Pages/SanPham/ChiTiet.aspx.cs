@@ -13,6 +13,14 @@ namespace LuxuryWatches.Pages.SanPham
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            // Kiểm tra xem người dùng đã đăng nhập hay chưa
+            if (!IsUserLoggedIn())
+            {
+                // Nếu chưa đăng nhập, chuyển hướng sang trang đăng nhập
+                Response.Redirect("/sign-in");
+            }
+
             int masp = int.Parse(RouteData.Values["masp"].ToString());
             sanPham sp = db.sanPhams.Find(masp);
             if (sp == null)
@@ -24,6 +32,16 @@ namespace LuxuryWatches.Pages.SanPham
             Page.Title = sp.tenSP;
             literalBreadCrumb.Text = sp.tenSP;
         }
+
+        private bool IsUserLoggedIn()
+        {
+            // Kiểm tra biến phiên để xem người dùng đã đăng nhập hay chưa
+
+            return Session["tkThanhVienUser"] != null || Session["tkThanhVienMember"] != null;
+
+        }
+
+
 
         public IEnumerable<sanPham> LaySanPhamLienQuan()
         {

@@ -54,13 +54,15 @@
                     <a href="/sign-in" style="color:#fff">&nbsp;Đăng Xuất</a> 
 
                 </p>
+              
+              
               <h5 style="color:#fff">
+                 
                  <%: (Session["tkThanhVienUser"] as LuxuryWatches.Data.khachHang)?.tkThanhVien + " " %>
                  <%: (Session["tkThanhVienMember"] as LuxuryWatches.Data.taiKhoan)?.tkThanhVien + " " %>
-
                 
                </h5>
-
+                 
 
 
 				<div class="col-md-6 top-header-left">

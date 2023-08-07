@@ -52,10 +52,11 @@
                          </div>
 
                      
-
+                        <asp:Label ID="lblLoi" runat="server" ForeColor="#ff6600"></asp:Label> 
                         <div class="Btnsubmit">
+                        
                           <asp:Button ID="btnRegister2" type="submit"  runat="server" ValidationGroup="registerForm" Text="Đăng Ký" OnClick="btnDK_Click"/>
-                            
+                                               
                         </div>
                         <div class="Btnlg">
                             <a style="text-decoration: none; color: #3ec5a1;"  href="/sign-in">Đăng Nhập</a>
